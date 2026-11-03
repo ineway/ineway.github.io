@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>紫雲山人 · ineway</title>
+  <meta name="description" content="紫雲山人的个人主页 — 仁義禮智信，溫良恭儉讓">
+  <style>
+    :root {
+      --ink: #2b2b2b;
+      --muted: #8a8a8a;
+      --paper: #faf9f6;
+      --card: #ffffff;
+      --accent: #1a5c4a;
+      --line: #e6e3dc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 72px 24px 48px;
+    }
+    .seal {
+      width: 64px; height: 64px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 600;
+      margin-bottom: 28px;
+    }
+    h1 { font-size: 32px; font-weight: 600; letter-spacing: 2px; }
+    .handle { color: var(--muted); font-size: 15px; margin-top: 4px; }
+    .motto {
+      margin-top: 24px;
+      padding: 18px 22px;
+      border-left: 3px solid var(--accent);
+      background: var(--card);
+      border-radius: 0 10px 10px 0;
+      font-size: 16px;
+      letter-spacing: 3px;
+      color: var(--accent);
+    }
+    .card {
+      margin-top: 32px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+    }
+    .card h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .card p, .card li { font-size: 15px; }
+    ul { list-style: none; }
+    li { padding: 6px 0; display: flex; align-items: baseline; gap: 10px; }
+    li::before { content: "·"; color: var(--accent); font-weight: 700; }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="seal">山</div>
+    <h1>紫雲山人</h1>
+    <div class="handle">ineway · 泉州 · 福建</div>
+
+    <div class="motto">仁義禮智信，溫良恭儉讓</div>
+
+    <div class="card">
+      <h2>关于我</h2>
+      <p>来自福建泉州，目前就职于 Quanzhou Neway Industrial Limited。相信技术是通用的语言，正在学习 Git 与 GitHub，把每一次提交都当作修行。</p>
+    </div>
+
+    <div class="card">
+      <h2>链接</h2>
+      <ul>
+        <li>GitHub：<a href="https://github.com/ineway">github.com/ineway</a></li>
+        <li>个人网站：<a href="https://www.chenronghui.com">www.chenronghui.com</a></li>
+        <li>第一个仓库：<a href="https://github.com/ineway/hello-github">hello-github</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>© 2026 ineway · Hosted on GitHub Pages</footer>
+</body>
+</html>
